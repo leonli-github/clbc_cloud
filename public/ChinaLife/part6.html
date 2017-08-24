@@ -1,0 +1,27 @@
+<form name="myForm6">
+    <br>
+    <h3>第四部分: 签署文件</h3>
+    <fieldset>
+        <div class="container" style="background-color: #E6F5FF; padding-top: 3%; padding-bottom: 3%; float: left; clear: left; width: 50%; margin-top: 4%">
+            <input type="text" class="appnum" placeholder="" style="float: left; clear: left; width:85%; background: none; border: none; margin-left: 3%" readonly>
+        </div>
+        <h4 style="float: left; clear: left; margin-top: 40px">上传文件</h4>
+        <div style="float: left; clear: left; width: 20%">
+            <div style="float: left; clear: left; margin-top: 1%; padding-bottom: 5%; background-color: #343434">
+                <input type="button" value="-"; style="color: white; background-color: #343434; width: 30%; border: none; margin: none;" onclick="zoom(0.9)"/>
+                <img src="images/zoombutton.jpg" style="width: 33%">
+                <input type="button" value="+"; style="color: white; background-color: #343434; width: 30%; border: none; margin: none;" onclick="zoom(1.1)"/>
+            </div>
+            <a href="images/pdfdoc.jpg" target="new">
+                <img src="images/pdfdoc.jpg" alt="pdf" id="pdfdoc" style="width: 103%">
+            </a>
+        </div>
+        <h4 style="float: left; clear: left;margin-top: 40px">签名</h4>
+        <div class="container" style="float: left; clear: left; width: 20%;">
+            <img id="signature" src="images/准保单持有人签署@1x.jpg" style="cursor:pointer;" onclick="javascript:sign();">
+        </div>
+        <div class="container" style="background-color: #E6F5FF; padding-top: 3%; padding-bottom: 3%; float: left; clear: left; width: 51.5%; margin-top: 4%;">
+            <input type="text" id="signdate" value="Signed Date" style="float: left; clear: left; background: none; border: none; margin-left: 3%; width: 90%; text-align: center; color: #9B9B9B;" readonly">
+        </div>
+    </fieldset><img name="confirm2" src='images/Confirm@2x.jpg' onMouseOver="this.src='images/Confirm_MouseOver@2x.jpg'" onMouseOut="this.src='images/Confirm@2x.jpg'" style="width:15%;float:right;" onclick="javascript:last_confirm();">
+</form>

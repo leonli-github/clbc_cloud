@@ -1,0 +1,96 @@
+<form id="myForm2" onsubmit="event.preventDefault();">
+    <br>						
+    <h3>交保费</h3>
+    <h4 style="float: left">客户信息</h4>
+    <br><br><br><br>
+    <fieldset>
+        <div style="float: left; display: block;width: 80%">
+            <label for="id" style="display: block;">姓名（必须与身份证明文件相同）</label>
+            <input type="fullname" id="fullname" name="fullname" placeholder="姓名（必须与身份证明文件相同）" maxlength="50" style="width:95%;" readonly>
+        </div>
+        <div style="float: left; display: block; width: 20%">
+            <label for="id" style="display: block;">性别</label>
+            <select name="sex" id="sex" style="width:88%;height:48px;" disabled="true">
+                <option value="Sex">性别</option>
+                <option value="M">男性</option>
+                <option value="F">女性</option>
+            </select>
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="id" style="display: block;">身份证明号码</label>
+            <input type="id" id="id" name="id" maxlength="50" placeholder="身份证明号码" style="width:95%;" readonly>
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="email" style="display: block;">电邮地址</label>
+            <input type="email" id="email" name="email" maxlength="50" placeholder="电邮地址" style="width:95%;" readonly>
+        </div>
+        <div style="float: left; display: block; width: 97.5%">
+            <label for="address" style="display: block;">住址</label>
+            <input type="address" id="address" name="address" maxlength="100" placeholder="住址" style="width:100%;" readonly>
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="residential" style="display: block;">住宅电话号码</label>
+            <input type="residential" id="residential" name="residential" maxlength="50" placeholder="住宅电话号码" style="width:95%;" readonly> 							</div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="mobile" style="display: block;">流动电话</label>
+            <input type="mobile" id="mobile" name="mobile" maxlength="50" placeholder="流动电话" style="width:95%" readonly>
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="cardnum" style="display: block;">卡号</label>
+            <input type="cardnum" id="cardnum" name="cardnum" maxlength="50" placeholder="卡号" style="width:95%" readonly>
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="accnum" style="display: block;">账号</label>
+            <input type="accnum" id="accnum" name="accnum" maxlength="50" placeholder="账号" style="width:95%" readonly>
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="clientnum" style="display: block;">客户号</label>
+            <input type="clientnum" id="clientnum" name="clientnum" maxlength="50" placeholder="客户号" style="width:95%" readonly>
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="productnum" style="display: block;">产品代码</label>
+            <input type="productnum" id="productnum" name="productnum" maxlength="50" placeholder="产品代码" style="width:95%" readonly>
+        </div>
+        <br><br>
+        <table>
+            <tr>
+                <th><h4>存入信息</h4></th>
+            </tr>
+        </table>
+        <div style="float: left; display: block; width: 50%">
+            <label for="currency" style="display: block;">交易币种</label>
+            <select type="currency" id="currency" name="currency" style="width:95%;height:48px;" disabled="true">
+                <option value="港币">港币</option>
+                <option value="人民币">人民币</option>
+            </select>
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="amount" style="display: block;">交易金额</label>
+            <input type="amount" id="amount" name="amount" maxlength="50" placeholder="交易金额"  style="width:95%;"  readonly>
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="applicationid" style="display: block;">保单编号</label>
+            <input type="applicationid" id="applicationid" name="applicationid" maxlength="50" style="width:95%;" readonly>
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="recipientaccount" style="display: block;">存入账户</label>
+            <input type="recipientaccount" id="recipientaccount" name="erecipientaccount" maxlength="50" value="184029" style="width:95%;" readonly>
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="method_pay" style="display: block;">付款方式</label>
+            <select type="method_pay" id="method_pay" name="method_pay" style="width:95%;height:48px;" >
+                <option value="现金">现金</option>
+                <option value="支票">支票</option>
+                <option value="银行转账">银行转账</option>
+
+            </select>
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="remark" style="display: block;">备注</label>
+            <input type="remark" id="remark" name="remark" maxlength="500" placeholder="备注"  style="width:97.5%;" >
+        </div>
+    </fieldset>
+    <br>
+    <img name="confirm1" src='images/Confirm@2x.jpg' onMouseOver="this.src='images/Confirm_MouseOver@2x.jpg'" onMouseOut="this.src='images/Confirm@2x.jpg'" style="width:15%;float:right;" onclick="Pay();">
+</form>
+

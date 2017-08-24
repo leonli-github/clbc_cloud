@@ -1,0 +1,65 @@
+<form name="myForm4" onsubmit="event.preventDefault();">
+    <br>
+    <h3>搜寻现有客户</h3>
+    <br>
+    <fieldset>
+        <input type="searchTerm" id="searchTerm2" name="searchTerm" placeholder="身份证号码" maxlength="50" style="float:left;width:40%;">
+        <input type="image" src="images/SearchIcon.jpg"  alt="searchicon" name="SearchIDBtn" id="SearchIDBtn" style="float:left;cursor: pointer; width: 7%;" onclick="QueryCRM();" />
+        <br>
+        <h4 id = "ncalert" style="visibility:hidden"> 非现有客户，请填写下表以完成用户开户及购买流程</h4>
+    </fieldset>
+    <h3>购买保险</h3>
+    <h4 style="float: left;">客户信息</h4>
+    <br><br><br><br>
+    <fieldset>
+        <div style="float: left; display: block;width: 80%">
+            <label for="fullname2" style="display: block;">姓名（必须与身份证明文件相同）</label>
+            <input type="fullname2" id="fullname2" name="fullname2" placeholder="姓名（必须与身份证明文件相同）" maxlength="50" style="width:95%;" >
+        </div>
+        <div style="float: left; display: block; width: 20%">
+            <label for="sex2" style="display: block;">性别</label>
+            <select name="sex2" id="sex2" style="width:88%;height:48px;">
+                <option value="Sex">性别</option>
+                <option value="M">男性</option>
+                <option value="F">女性</option>
+            </select>
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="id2" style="display: block;">身份证明号码</label>
+            <input type="id2" id="id2" name="id2" maxlength="50" placeholder="身份证明号码" style="width:95%;" >
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="email2" style="display: block;">电邮地址</label>
+            <input type="email2" id="email2" name="email2" maxlength="50" placeholder="电邮地址" style="width:95%;" >
+        </div>
+        <div style="float: left; display: block; width: 97.5%">
+            <label for="address2" style="display: block;">住址</label>
+            <input type="address2" id="address2" name="address2" maxlength="100" placeholder="住址" style="width:100%;" >
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="residential2" style="display: block;">住宅电话号码</label>
+            <input type="residential2" id="residential2" name="residential2" maxlength="50" placeholder="住宅电话号码" style="width:95%;" > 							</div>
+        <div style="float: left; display: block; width: 50%">
+
+            <label for="mobile2" style="display: block;">流动电话</label>
+            <input type="mobile2" id="mobile2" name="mobile2" maxlength="50" placeholder="流动电话" style="width:95%" >
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="cardnum2" style="display: block;">卡号</label>
+            <input type="cardnum2" id="cardnum2" name="cardnum2" maxlength="50" placeholder="卡号" style="width:95%" >
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="accnum2" style="display: block;">账号</label>
+            <input type="accnum2" id="accnum2" name="accnum2" maxlength="50" placeholder="账号" style="width:95%" >
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="clientnum2" style="display: block;">客户号</label>
+            <input type="clientnum2" id="clientnum2" name="clientnum2" maxlength="50" placeholder="客户号" style="width:95%" >
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="productnum2" style="display: block;">产品代码</label>
+            <input type="productnum2" id="productnum2" name="productnum2" maxlength="50" placeholder="产品代码" style="width:95%" >
+        </div>
+    </fieldset>
+    <img name="confirm1" src='images/Confirm@2x.jpg' onMouseOver="this.src='images/Confirm_MouseOver@2x.jpg'" onMouseOut="this.src='images/Confirm@2x.jpg'" style="width:15%;float:right;" onclick="part5();">
+</form>

@@ -1,0 +1,11 @@
+cd ~/clbc_2.0/artifacts/channel
+
+./bin/cryptogen generate --config=./cryptogen.yaml
+
+export FABRIC_CFG_PATH=$PWD
+
+./bin/configtxgen -profile TwoOrgsOrdererGenesis -outputBlock ./genesis.block
+
+export CHANNEL_NAME=mychannel
+
+./bin/configtxgen -profile TwoOrgsChannel -outputCreateChannelTx ./mychannel.tx -channelID $CHANNEL_NAME

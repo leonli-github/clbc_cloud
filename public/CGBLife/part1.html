@@ -1,0 +1,20 @@
+<form name="myForm1"  onsubmit="event.preventDefault();">
+    <br>
+    <h3>帐户资料</h3>
+    <br>
+    <fieldset>
+        <input type="searchTerm" id="searchTerm1" name="searchTerm" placeholder="身份证号码" maxlength="50" style="float:left;width:40%;">
+        <input type="image" src="images/SearchIcon.jpg"  alt="searchicon" name="SearchIDBtn" id="SearchIDBtn" style="cursor: pointer; width: 7%;" onclick="SearchByHKID();" />
+        <div><table id="accounttable">
+            <tr id>
+                <td>要保书编号</td>
+                <td>名称</td>
+                <td>发票编号</td>
+                <td>付款银行</td>
+                <td>货币</td>
+                <td>金额</td>
+                <td>付款日期</td>
+                <td>交保费</td>
+            </tr></div>
+    </fieldset>
+</form>

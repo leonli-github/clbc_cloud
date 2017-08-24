@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta charset="UTF-8">
+    <title>CGBLife </title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        body{
+            font: 12px verdana, sans-serif;
+        }
+        .header{
+            padding: 10px 0;
+        }
+        .container{
+            width: 100%;
+            background-color: white;
+            margin: 0 auto;
+        }
+        .sidebar{
+            float: left;
+            width: 20%;
+            min-height: 170px;
+        }
+        .content{
+            float: left;
+            width: 80%;
+            min-height: 1200px;
+        }
+        .content .section{
+            padding: 10px;
+        }
+        .content h3{
+            font-size: 16px;
+        }
+        .clearfix{
+            clear: both;
+        }
+        .footer{
+            padding: 10px 0;
+        }
+        #accounttable {
+            border-collapse: collapse;
+            padding:20px;
+            table-layout：fixed;
+        }
+        #accounttable tr:first-child td{
+            font: 12px verdana, sans-serif;
+            font-weight:bold;
+            width: 160px;
+            padding: 9px;
+        }
+        #accounttable td {
+            border-bottom: 1px solid #EEEEEE;
+            word-break: keep-all;
+        }
+        #accounttable tr:not(:first-child) td{
+            align-content: center;
+            padding: 15px;
+            word-break: keep-all;
+        }
+        #nocontent{
+            color: red;
+        }
+        #ncalert{
+            color:red;
+            margin-left:400px;
+        }
+    </style>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="js/CryptoJS v3.1.2/rollups/aes.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <img src="images/Top@2x.jpg" alt="top" style="width:100%">
+    </div>
+    <div class="header">
+        <img src="images/陈盈盈@1x.jpg" style="float:left;width:328px;height:59px">
+        <img src="images/账户资料_MouseOver@1x.jpg" id=button1 style="float:left;width:177px;height:59px" onMouseOver="this.style.cursor='pointer'" onClick="window.location.reload()">
+        <img src="images/RedBanner@1x.jpg" id=button2 style="float:left;width:332px;height:59px" >
+        <img src="images/Rest of top bar@1x.jpg" style="float:left;width:496px;height:59px">
+    </div>
+    <div class="wrapper">
+        <div class="sidebar">
+            <img src="images/Journey Client @2x.jpg" id="journey" style="visibility:visible;width:100%">
+            <img src="images/Journey1@2x.jpg" id="journey1" style="visibility:hidden;width:100%">
+            <img src="" id="journey2" style="visibility:hidden">
+            <img src="" id="journey3" style="visibility:hidden">
+        </div>
+        <div class="content">
+            <div id="part0" style="position: absolute; visibility:visible" w3-include-html="part0.html" class="section"></div>
+            <div id="part1" style="position: absolute; visibility:hidden" w3-include-html="part1.html" class="section"></div>
+            <div id="part2" style="position: absolute; visibility:hidden" w3-include-html="part2.html" class="section"></div>
+            <div id="part3" style="position: absolute; visibility:hidden" w3-include-html="part3.html" class="section"></div>
+            <div id="part4" style="position: absolute; visibility:hidden" w3-include-html="part4.html" class="section"></div>
+            <div id="part5" style="position: absolute; visibility:hidden" w3-include-html="part5.html" class="section"></div>
+            <div id="part6" style="position: absolute; visibility:hidden" w3-include-html="part6.html" class="section"></div>
+            <script>w3.includeHTML();</script>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="footer">
+        <img src="images/Bottom@2x.jpg" alt="bottom" style="width:100%">
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<form name="myForm1">
+    <br>
+    <h3>搜索客户</h3>
+    <fieldset>
+        <input type="searchTerm" id="searchTerm3" name="searchTerm" placeholder="保单编号/身份证号码" maxlength="50" style="float:left;width:40%;">
+        <input type="image" src="images/SearchIcon.jpg"  alt="searchicon" name="SearchIDBtn" id="SearchIDBtn" style="cursor: pointer; float:left; width: 7.3%;" onclick="QueryByAppID();" />
+    </fieldset>
+    <h3>输入客户资料</h3>
+    <table>
+        <tr>
+            <th><h3>第一部分: 客户资料 </h3></th>
+            <th><img src="images/Edit_MouseOver@1x.jpg" alt="edit" style="width:100%"></th>
+        </tr>
+    </table>
+    <br>
+    <fieldset>
+        <input type="fullname" id="fullname" name="fullname" placeholder="姓名（必须与身份证明文件相同）" maxlength="50" style="width:80%;">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <select name="sex" id="sex" style="width:15%;height:48px;">
+            <option value="Sex">性别</option>
+            <option value="M">男性</option>
+            <option value="F">女性</option>
+        </select> 
+        <input type="id" id="id" name="id" maxlength="50" placeholder="身份证明号码" style="width:47.5%;"> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" id="email" name="email" maxlength="50" placeholder="电邮地址" style="width:47.5%;">
+        <input type="address" id="address" name="address" maxlength="100" placeholder="住址" style="width:99.5%;">
+        <input type="residential" id="residential" name="residential" maxlength="10" placeholder="住宅电话号码" style="width:47.5%;"> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="mobile" id="mobile" name="mobile" maxlength="10" placeholder="流动电话" style="width:47.5%">
+        <br><br><br>
+        <img name="confirm1" src='images/Confirm@2x.jpg' onMouseOver="this.src='images/Confirm_MouseOver@2x.jpg'" onMouseOut="this.src='images/Confirm@2x.jpg'" style="width:15%;float:right;" onclick="javascript:validate1();">
+    </fieldset>
+</form>

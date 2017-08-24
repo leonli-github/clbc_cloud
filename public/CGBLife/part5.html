@@ -1,0 +1,40 @@
+<form name="myForm4" onsubmit="event.preventDefault();">
+    <br>
+    <h3>购买保险</h3><h4 style="float: left">存入信息</h4>
+    <br><br><br><br>
+    <fieldset>
+        <div style="float: left; display: block; width: 50%">
+            <label for="currency2" style="display: block;">交易币种</label>
+            <select type="currency2" id="currency2" name="currency2" style="width:95%;height:48px;" >
+                <option value="currency">交易币种</option>
+                <option value="HKD">港币</option>
+                <option value="RMB">人民币</option>
+            </select>
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="amount2" style="display: block;">交易金额</label>
+            <input type="amount2" id="amount2" name="amount2" maxlength="50" placeholder="交易金额"  style="width:95%;"  >
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="applicationid2" style="display: block;">保单编号</label>
+            <input type="applicationid2" id="applicationid2" name="applicationid2" maxlength="50" style="width:95%;" >
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="recipientaccount2" style="display: block;">存入账户</label>
+            <input type="recipientaccount2" id="recipientaccount2" name="recipientaccount2" maxlength="50" value="184029" style="width:95%;" >
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="method_pay2" style="display: block;">付款方式</label>
+            <select type="method_pay2" id="method_pay2" name="method_pay2" style="width:95%;height:48px;" >
+                <option value="cash">现金</option>
+                <option value="cheque">支票</option>
+            </select>
+        </div>
+        <div style="float: left; display: block; width: 50%">
+            <label for="remark2" style="display: block;">备注</label>
+            <input type="remark2" id="remark2" name="remark2" maxlength="500" placeholder="备注"  style="width:97.5%;" >
+        </div>
+    </fieldset>
+    <img name="confirm1" src='images/Confirm@2x.jpg' onMouseOver="this.src='images/Confirm_MouseOver@2x.jpg'" onMouseOut="this.src='images/Confirm@2x.jpg'" style="width:15%;float:right;" onclick="Pay2();">
+</form>
+

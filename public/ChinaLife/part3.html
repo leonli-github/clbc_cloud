@@ -1,0 +1,20 @@
+<form name="myForm3" onsubmit="event.preventDefault();">
+    <br>
+    <h3>账户支付状态</h3>
+    <br>
+    <fieldset>
+        <input type="searchTerm" id="searchTerm1" name="searchTerm" placeholder="保单编号/身份证号码" maxlength="50" style="float:left;width:40%;">
+        <input type="image" src="images/SearchIcon.jpg"  alt="searchicon" name="SearchIDBtn" id="SearchIDBtn" style="cursor: pointer; float:left; width: 7.3%;" onclick="QueryByAppID();" />
+        <table id="accounttable">
+            <tr id>
+                <td>要保书编号</td>
+                <td>名称</td>
+                <td>发票编号</td>
+                <td>付款银行</td>
+                <td>货币</td>
+                <td>金额</td>
+                <td>付款日期</td>
+                <td>批核</td>
+            </tr>
+    </fieldset>
+</form>
